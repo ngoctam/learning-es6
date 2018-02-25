@@ -24,5 +24,17 @@ Downloading Webpack:
 
     npm install jquery --save-dev
 
-Bundleling:
-    webpack
+Run webpack: 
+    1. webpack ./assets/js/scripts.js ./public/js/bundle.js
+    2. Create webpack.config.js with:
+        module.exports = {
+            entry: './assets/js/scripts.js',
+            output: { filename: './public/js/bundle.js' }
+        }
+        
+        Comment run: 
+            webpack
+            webpack --watch
+        
+Converting ES6 to ES5: use loader and preset-es2015 in module config
+    npm install --save-dev babel-core babel-loader babel-preset-es2015
