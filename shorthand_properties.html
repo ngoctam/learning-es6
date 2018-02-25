@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.js"></script>
+	
+</head>
+<body>
+	<script type="text/babel">
+		var person = {
+            name: "John",
+            runs: function() {
+                console.log("John is running 1");
+            }
+        }
+        person.runs();
+
+        var person2 = {};
+        person2.name = "John";
+        person2.runs = function() {
+            console.log("John is running 2");
+        }
+        person2.runs();
+
+        var person3 = {};
+        person3.name = "John";
+        person3.runs = () => {
+            console.log("John is running 3");
+        }
+        person3.runs();
+
+        var name = "John";
+        var runs = () => {
+            console.log("John is running 4");
+        }
+        var person4 = {name, runs};
+        person4.runs();
+
+        var name = "John";
+        var lastName = "Doe";
+        var person5 = {
+            name, 
+            lastName,
+            runs(){
+                console.log("John is running 5");
+            }, 
+            walks(){
+                console.log("John is walking 5");
+            },
+        };
+        person5.runs();
+        person5.walks();
+	</script>
+</body>
+</html>
