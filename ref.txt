@@ -1,0 +1,28 @@
+ES6:
+    Variable declarations, let, const
+    Function default parameters
+    Arrow Functions
+    Classes
+
+ES6 Compatibility: https://kangax.github.io/compat-table/es6/
+
+Compilers:
+    Traceur
+    Babel + core-js
+    Closure
+    Type-Script + core-js
+
+Introducing Babel:
+    https://cdnjs.com/libraries/babel-core
+    <script type="text/babel">...</script>
+    
+Downloading Webpack:
+    npm info webpack version
+    npm install -g webpack@3.8.1 --save-dev
+
+    npm init -> create package.json
+
+    npm install jquery --save-dev
+
+Bundleling:
+    webpack
