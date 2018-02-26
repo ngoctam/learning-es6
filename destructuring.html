@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.js"></script>
+	
+</head>
+<body>
+	<script type="text/babel">
+		var cars = [ 'BMW', 'Mercedes', 'Ford'];
+        console.log(cars[0]);
+
+		var [bmw, mercedes, ] = [ 'BMW', 'Mercedes', 'Ford'];
+        console.log(bmw, mercedes);
+
+        var [bmw,,ford,,ferrari] = [ 'BMW', 'Mercedes', 'Ford', 'Honda', 'Ferrari'];
+        console.log(bmw, ford, ferrari);
+
+        var {name, bio} = {
+            name: 'John',
+            bio: 'is programmer'
+        }
+
+        console.log(name, bio);
+
+        let person = {
+            name: 'John',
+            bio: 'is programmer'
+        }
+
+        let displayData = function({name, bio}) {
+            return `${name} ${bio}`;
+        }
+
+        console.log(displayData(person));
+
+	</script>
+</body>
+</html>
